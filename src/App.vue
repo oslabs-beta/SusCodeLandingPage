@@ -1,15 +1,22 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue'
-import Main from './components/main.vue'
+import NavBar from './components/Navigation/NavBar.vue'
+import Main from './main/main.vue'
 import HelloWorld from './components/HelloWorld.vue'
-import Footer from "./components/Footer.vue"
+import About from './components/About/About.vue'
+import Feature from './components/Feature/Feature.vue'
+import Team from './components/TeamMembers/collaborators.vue'
+import ContactUs from './components/Footer/ContactUs.vue'
+import Footer from "./components/Footer/Footer.vue"
 </script>
 
 <template>
   <NavBar/>
-  <Main></Main>
+  <Main/>
   <HelloWorld msg="Vite + Vue" />
-  <Footer></Footer>
+  <About/>
+  <Team/>
+  <ContactUs/>
+  <Footer/>
 </template>
 
 <style scoped>
