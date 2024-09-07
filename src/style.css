@@ -60,9 +60,9 @@ button:focus-visible {
   text-align: center;
 }
 
-/* .meat {
-  background-color: #242424;
-} */
+.meat {
+  padding: 10em;
+}
 
 #app.child:first-child {
   width: 100%;
