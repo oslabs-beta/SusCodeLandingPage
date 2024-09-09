@@ -1,6 +1,13 @@
 <script lang="ts">
 
-// defineProps<{ msg: string }>()
+export default {
+    name: 'Member',
+    props: {
+      msg: {
+        type: String,
+      }
+    }
+}
 
 </script>
 
