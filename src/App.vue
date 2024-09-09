@@ -20,10 +20,13 @@ import Member from "./components/Team/Member.vue"
     <Team/>
     <section class="temp">
       <Member/>
-      <Member msg="member2"/>
-      <Member msg="member3"/>
+      <Member/>
+      <Member/>
+      <Member/>
+      <Member/>
+      <!-- <Member msg="member3"/>
       <Member msg="member4"/>
-      <Member msg="member5"/>
+      <Member msg="member5"/> -->
     </section>
     <ContactUs/>
   </div>
