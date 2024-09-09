@@ -20,6 +20,11 @@ import ColorMode from './colormode.vue'
 </template>
 
 <style scoped>
+
+nav {
+  background-color: #242424;
+}
+
 .logo {
   height: 3.5em;
   will-change: filter;
