@@ -6,8 +6,8 @@ import About from './components/About/About.vue'
 import Feature from './components/Feature/Feature.vue'
 import Team from './components/Team/Team.vue'
 import ContactUs from './components/Footer/ContactUs.vue'
-import Footer from "./components/Footer/Footer.vue"
-import Member from "./components/Team/Member.vue"
+import Footer from './components/Footer/Footer.vue'
+
 </script>
 
 <template>
@@ -18,16 +18,6 @@ import Member from "./components/Team/Member.vue"
     <About/>
     <Feature/>
     <Team/>
-    <section class="temp">
-      <Member/>
-      <Member/>
-      <Member/>
-      <Member/>
-      <Member/>
-      <!-- <Member msg="member3"/>
-      <Member msg="member4"/>
-      <Member msg="member5"/> -->
-    </section>
     <ContactUs/>
   </div>
   <Footer/>

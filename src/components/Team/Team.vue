@@ -1,10 +1,22 @@
 <script lang="ts">
-// import Dev from "./Member.vue"
+import { defineComponent } from 'vue';
+import Member from "./Member.vue"
+
+export default defineComponent({
+    name: 'Team',
+    components: {
+      Member
+    }
+});
 </script>
 
 <template>
   <section>
-    HELLOO WHY YOU NO WORK
+    <Member msg="Member 1"/>
+    <Member msg="Member 1"/>
+    <Member msg="Member 1"/>
+    <Member msg="Member 1"/>
+    <Member msg="Member 1"/>
   </section>
 </template>
 
