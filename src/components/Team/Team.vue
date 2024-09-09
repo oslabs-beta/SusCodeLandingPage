@@ -1,14 +1,10 @@
 <script lang="ts">
-  import Member from "./Member.vue"
+// import Dev from "./Member.vue"
 </script>
 
 <template>
   <section>
-    <Member></Member>
-    <Member></Member>
-    <Member></Member>
-    <Member></Member>
-    <Member></Member>
+    HELLOO WHY YOU NO WORK
   </section>
 </template>
 

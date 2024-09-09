@@ -1,10 +1,13 @@
 <script lang="ts">
+
+defineProps<{ msg: string }>()
+
 </script>
 
 <template>
   <section>
     <img src="../../assets/suscodeicon.png" alt="profile of someone">
-    <span>Placeholder</span>
+    <span>{{ msg }}</span>
   </section>
 </template>
 
