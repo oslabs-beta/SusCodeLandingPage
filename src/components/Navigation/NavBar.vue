@@ -9,20 +9,18 @@ import ColorMode from './colormode.vue'
     <a href="/home" target="_blank" class="logo">
       <img src="../../assets/suscodeicon.png" class="logo" alt="SusCode logo" />
     </a>
-    <a> Feature </a>
-    <a> Docs </a>
+    <a> Features </a>
     <a> About </a>
     <a> Team </a>
     <a> Contact Us </a>
     <ColorMode></ColorMode>
   </nav>
-  
 </template>
 
 <style scoped>
 
 nav {
-  background-color: #242424;
+  background-color: #131313;
 }
 
 .logo {
