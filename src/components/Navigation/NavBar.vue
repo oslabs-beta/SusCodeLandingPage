@@ -23,6 +23,7 @@ import ColorMode from './colormode.vue'
 
 nav {
   background-color: #242424;
+  z-index: 1100;
 }
 
 .logo {
