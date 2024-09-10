@@ -1,20 +1,17 @@
 <script setup lang="ts">
 import NavBar from './components/Navigation/NavBar.vue'
 import Main from './components/main/main.vue'
-import HelloWorld from './components/HelloWorld.vue'
 import About from './components/About/About.vue'
 import Feature from './components/Feature/Feature.vue'
 import Team from './components/Team/Team.vue'
 import ContactUs from './components/Footer/ContactUs.vue'
 import Footer from './components/Footer/Footer.vue'
-
 </script>
 
 <template>
   <NavBar/>
   <div class="meat">
     <Main/>
-    <HelloWorld msg="Vite + Vue" />
     <About/>
     <Feature/>
     <Team/>
@@ -25,7 +22,7 @@ import Footer from './components/Footer/Footer.vue'
 
 <style scoped>
   .meat {
-    padding: 3em;
+    padding: 1em;
   }
 
   .temp {
