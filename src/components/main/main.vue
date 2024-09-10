@@ -13,15 +13,15 @@ export default {
       const spotlightDuration = 4000;
 
       const interval = setInterval(() => {
-      // Randomly move the spotlight around the screen
-      spotlightX = Math.random() * window.innerWidth;
-      spotlightY = Math.random() * window.innerHeight;
+        // Randomly move the spotlight around the screen
+        spotlightX = Math.random() * window.innerWidth;
+        spotlightY = Math.random() * window.innerHeight;
 
-      spotlightStyle.value = {
-        top: `${spotlightY}px`,
-        left: `${spotlightX}px`,
-      };
-    }, 300);
+        spotlightStyle.value = {
+          top: `${spotlightY}px`,
+          left: `${spotlightX}px`,
+        };
+      }, 300);
 
       // Stop the spotlight after a few seconds
       setTimeout(() => {
@@ -39,16 +39,17 @@ export default {
 </script>
 
 <template>
+  <!-- Spotlight Overlay -->
   <div class="dim-overlay" v-if="showSpotlight">
-      <div class="spotlight" :style="spotlightStyle"></div>
+    <div class="spotlight" :style="spotlightStyle"></div>
   </div>
 
+  <!-- Main Section -->
   <section id="main">
     <div class="text">
-      <h1>
-        A VS Code Extension
+      <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
+        <h1>A VS Code Extension</h1>
         <span class="gradient">Suscode</span>
-      </h1>
       <p class="body">
         A VS Code Extension designed to scan your downloaded extensions for potentially harmful code practices.
       </p>
@@ -62,14 +63,14 @@ export default {
 </template>
 
 <style scoped>
-#main {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+html, body {
   height: 100%;
-  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
+/* Spotlight effect styles */
 .dim-overlay {
   position: absolute;
   top: 0;
@@ -91,64 +92,116 @@ export default {
   z-index: 11;
 }
 
-.text {
-  width: 100%;
-  padding: 0 3rem;
-  text-align: left;
-  z-index: 1; /* Make sure text is behind the spotlight */
+/* Main section */
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  background-color: #242424;
+  overflow: hidden; /* Prevent scrolling */
 }
 
-  @media (min-width: 1024px) { /* breakpoint: 1024px and up */
-    .text {
-      width: 58.333333%; /* w-7/12 */
-    }
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, #131313 0%, #242424 100%);
+  color: #e8e8e8;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.logo {
+  display: block;
+  max-width: 60%;
+  max-height: 60%;
+  object-fit: contain;
+  margin-bottom: -2rem; /* Adjust overlap with h1 */
+}
+
+h1 {
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  color: #9d9d9d;
+}
+
+.gradient {
+  display: inline;
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(142deg, rgba(122,164,212,1) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
+  background-clip: text;
+  color: transparent;
+  margin-top: -2rem;
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Button styles */
+.download, .features {
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.download {
+  background-color: rgba(4, 94, 222, 1);
+}
+
+.download:hover {
+  background-color: #1A1A1A;
+}
+
+.features {
+  background-color: #1A1A1A;
+}
+
+.features:hover {
+  background-color: rgba(4, 94, 222, 1);
+}
+
+.body {
+  color: #9d9d9d;
+  font-size: 1rem;
+  width: 50vh;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3.25rem;
   }
 
   .gradient {
-    display: inline;
-    background: rgb(122,164,212);
-    background: linear-gradient(142deg, rgba(122,164,212,1) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
-    background-clip: text;
-    color: transparent;
+    font-size: 5rem;
   }
 
-  .button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .download, .features {
+    font-size: 1.25rem;
+    padding: 1em 2em;
   }
 
-  .download {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(4,94,222,1);
-    border-radius: 0.5em;
-    transition: background-color 0.3s, background-color 0.3s;
-    padding: 1em 1.5em;
-    margin: 3em;
+  .logo {
+    max-width: 60vw;
+    max-height: 60vh;
   }
-
-  .download:hover {
-    background-color: #1A1A1A;
-  }
-
-  .features {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1A1A1A;
-    border-radius: 0.5em;
-    transition: background-color 0.3s, background-color 0.3s;
-    padding: 1em 1.5em;
-    margin: 3em;
-  }
-
-  .features:hover {
-    background-color: rgba(4,94,222,1);
-  }
-
-  .body {
-    color: #9d9d9d;
-  }
+}
 </style>
