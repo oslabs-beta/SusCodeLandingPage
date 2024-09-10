@@ -1,4 +1,9 @@
 <!-- main section for landing page -->
+<script lang="ts">
+export default {
+    name: 'Main',
+}
+</script>
 
 <template>
   <section id="main">

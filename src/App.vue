@@ -6,7 +6,6 @@ import Feature from './components/Feature/Feature.vue'
 import Team from './components/Team/Team.vue'
 import ContactUs from './components/Footer/ContactUs.vue'
 import Footer from './components/Footer/Footer.vue'
-
 </script>
 
 <template>
