@@ -13,6 +13,9 @@
 
 body {
   margin: 0;
+  /* background-color: #242424; */
+  /* background: rgb(36,36,36); */
+  background: linear-gradient(180deg, rgba(36,36,36,1) 5%, rgba(0,0,0,1) 18%, rgba(0,0,0,1) 100%);
 }
 
 a {

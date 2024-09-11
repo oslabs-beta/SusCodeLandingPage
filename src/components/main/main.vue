@@ -53,23 +53,17 @@ export default {
         <p class="body">
           A VS Code Extension designed to scan your downloaded extensions for potentially harmful code practices.
         </p>
-        <div class="button">
+        <div class="buttons">
           <button href="#" class="download">Download Now</button>
           <button class="features">How SusCode Works</button>
         </div>
       </div>
-      <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
     </div>
+    <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
   </section>
 </template>
 
 <style scoped>
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
 /* Spotlight effect styles */
 .dim-overlay {
@@ -99,25 +93,37 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 85vh;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-  position: relative;
-  background-color: #242424;
   overflow: hidden; /* Prevent scrolling */
+  margin-left:3em;
 }
 
 .text {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
   justify-items: center;
-  background: linear-gradient(to bottom, #242424 0%, #000000 100%);
   width: 100%;
   height: 100%;
-  padding: 0;
+  padding: 0 1em 2em 3em;
   margin: 0;
   box-sizing: border-box;
+}
+
+img {
+  width: 65%;
+}
+
+@media(max-width: 950px) {
+  #main {
+    margin: 0;
+    flex-wrap: wrap;
+  };
+  .text {
+    padding: 0;
+  }
+  /* img {
+    width: 100%;
+  } */
 }
 
 .content {
@@ -130,12 +136,12 @@ html, body {
   padding: 1rem;
 }
 
-.logo {
+/* .logo {
   display: block;
   max-width: 60%;
   max-height: 60%;
   object-fit: contain;
-}
+} */
 
 h1 {
   z-index: 5;
@@ -154,7 +160,7 @@ h1 {
   margin-top: -2rem;
 }
 
-.button {
+.buttons {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -164,7 +170,6 @@ h1 {
 /* Button styles */
 .download, .features {
   padding: 0.75em 1.5em;
-  font-size: 1rem;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
 }
@@ -177,10 +182,10 @@ h1 {
   background-color: #1A1A1A;
 }
 
+/* do we need this button? */
 .features {
   background-color: #1A1A1A;
 }
-
 .features:hover {
   background-color: rgba(4, 94, 222, 1);
 }
@@ -190,23 +195,21 @@ h1 {
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  h1 {
-    font-size: 3.25rem;
+/* @media (min-width: 768px) {
+  #main {
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
+} */
 
-  .gradient {
-    font-size: 5rem;
+/* MAKE IMAGE WRAP WHY NO WRAP */
+@media (max-width: 768px) {
+  #main {
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
   }
-
-  .download, .features {
-    font-size: 1.25rem;
-    padding: 1em 2em;
-  }
-
-  .logo {
-    max-width: 75vw;
-    max-height: 75vh;
-  }
+  
 }
 </style>

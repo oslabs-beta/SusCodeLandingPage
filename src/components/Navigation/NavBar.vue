@@ -6,13 +6,13 @@ import ColorMode from './colormode.vue'
 
 <template>
   <nav>
-    <a href="/home" target="_blank" class="logo">
+    <a href="#main" class="logo">
       <img src="../../assets/suscodeicon.png" class="logo" alt="SusCode logo" />
     </a>
-    <a> Features </a>
-    <a> About </a>
-    <a> Team </a>
-    <a> Contact Us </a>
+    <a href="#features"> Features </a>
+    <a href="#about"> About </a>
+    <a href="#team"> Team </a>
+    <a href="#contactus"> Contact Us </a>
     <ColorMode></ColorMode>
   </nav>
 </template>
@@ -43,7 +43,7 @@ nav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0px 16px;
   text-decoration: none;
   font-size: 17px;
 }
