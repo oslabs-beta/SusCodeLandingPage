@@ -1,9 +1,39 @@
 {
   "team" : [
-    {"id": "t01m01", "name": "Ali McNarma", "github": "https://github.com/allisonrm95", "imagePath": "images/AliM.jpg"},
-    {"id": "t01m02", "name": "Joyce Oh", "github": "https://github.com/joyceoh", "imagePath": "images/jo.jpg"},
-    {"id": "t01m03", "name": "Kenny Olson", "github": "https://github.com/AchillesHeir", "imagePath": "images/ko.jpg"},
-    {"id": "t01m04", "name": "Seth Hollingsworth", "github": "https://github.com/sethjholl07", "imagePath": "images/sh.jpg"},
-    {"id": "t01m05", "name": "William Delessandro", "github": "https://github.com/bjdooi", "imagePath": "images/bjwd.jpg"}
+    {
+      "id": "t01m01", 
+      "name": "Ali McNarma", 
+      "github": "https://github.com/allisonrm95", 
+      "linkedin": "https://www.linkedin.com/in/ali-mcnamara/",
+      "imagePath": "images/AliM.jpg"
+    },
+    {
+      "id": "t01m02", 
+      "name": "Joyce Oh", 
+      "github": "https://github.com/joyceoh", 
+      "linkedin": "https://www.linkedin.com/in/joyce-oh-/",
+      "imagePath": "images/joh.jpg"
+    },
+    {
+      "id": "t01m03", 
+      "name": "Kenny Olson", 
+      "github": "https://github.com/AchillesHeir", 
+      "linkedin": "https://www.linkedin.com/in/kenneth-j-olson/",
+      "imagePath": "images/ko.jpg"
+    },
+    {
+      "id": "t01m04", 
+      "name": "Seth Hollingsworth", 
+      "github": "https://github.com/sethjholl07", 
+      "linkedin": "https://www.linkedin.com/in/sethhollingsworth/",
+      "imagePath": "images/sh.jpg"
+    },
+    { 
+      "id": "t01m05", 
+      "name": "William Delessandro", 
+      "github": "https://github.com/bjdooi", 
+      "linkedin": "https://www.linkedin.com/in/william-jack-dalessandro-816467104/",
+      "imagePath": "images/bjwd.jpg"
+    }
   ]
 }

@@ -23,6 +23,7 @@ export default defineComponent({
       :key="member.id"
       :name="member.name"
       :github="member.github"
+      :linkedin="member.linkedin"
       :image="member.imagePath"
     />
   </section>
@@ -30,7 +31,7 @@ export default defineComponent({
 
 <style scoped>
   #team {
-    margin: 10em 10em;
+    margin: 10em 15em;
     border: .5em solid black;
     border-radius: 2em;
     padding: 2em;

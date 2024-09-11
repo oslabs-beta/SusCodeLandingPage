@@ -23,7 +23,7 @@ export default {
                     <b-tab class="b-tab" title="document.write()"><p class="p">This code pattern can introduce vulnerabilities because it allows the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, document.write inserts content directly into the DOM in JavaScript. If it includes user-controlled input, it can lead to cross-site scripting (XSS) attacks, allowing malicious scripts to be executed in the user’s browser.</p></b-tab>
                     <b-tab class="b-tab" title="dangerouslySetInnerHTML()"><p class="p">This code pattern can introduce vulnerabilities because it allows the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, dangerouslySetInnerHTML is a React property that sets HTML directly in the DOM. If untrusted data is used without proper sanitization, it poses a high risk of XSS by injecting harmful HTML or scripts into the webpage.</p></b-tab>
                     <b-tab class="b-tab" title="eval()"><p class="p">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, eval executes a string as JavaScript code. It can easily allow attackers to execute arbitrary code if untrusted input is passed to it, leading to code injection vulnerabilities.</p></b-tab>
-                    <b-tab class="b-tab" title="exec()"><p class="p">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, exec executes system commands in many programming languages (e.g., PHP, Python). Like shell_exec, it can be used for command injection if untrusted input is processed without validation.</p></b-tab>
+                    <b-tab class="b-tab" title="exec()"><p class="p" style="padding-left: 10px;">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, exec executes system commands in many programming languages (e.g., PHP, Python). Like shell_exec, it can be used for command injection if untrusted input is processed without validation.</p></b-tab>
                     <b-tab class="b-tab" title="System()"><p class="p">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code or the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, System commands (e.g., System() in Java) allow running system-level commands. If unvalidated input is passed, it could result in command injection and compromise system security.</p></b-tab>
             </b-tabs>
         </div>
@@ -31,7 +31,7 @@ export default {
 </template>
 
 <style lang="css" scoped>
-#feature {
+#features {
       width: 100vw; /* w-full */
       height: 85vh;
       display: flex;
@@ -42,23 +42,19 @@ export default {
       background: linear-gradient(to bottom, #242424 0%, #000000 100%);
       box-sizing: border-box;
       margin: 0;
-      padding: 0;
+      padding: 0, 2em;
   }
 
   .features-container {
-    width: 100%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 20px;
     margin: 20px;
+    margin-bottom: 5em;
   }
-
-  p {
-  width: 75%;
-  text-align: center;
-}
 
 .tabs {
     display: flex;
@@ -67,19 +63,20 @@ export default {
     text-align: center;
 }
 
+.b-tab-container {
+    display: flex; /* Align tabs horizontally */
+    width: 75%;
+}
+
 .b-tabs {
   display: flex;
   flex-direction: column;
-  width: 100%;
   background-color: #333; /* Background color of the tabs */
   border-radius: 8px; /* Rounded corners for the tabs container */
   overflow: hidden; /* Hide overflow to maintain rounded corners */
   align-items: center;
-}
-
-.b-tab-container {
-    display: flex; /* Align tabs horizontally */
-    width: 100%;
+  font-size: 1.25em;
+  padding: 0.5em;
 }
 
 /* Style for each tab header */
@@ -92,6 +89,10 @@ export default {
   border-radius: 8px; /* Rounded corners for each tab header */
   flex: 1;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  /* font-size: 1.25em; */
+  padding: 1.5em;
 }
 
 /* Style for the active tab header */
@@ -111,4 +112,5 @@ export default {
   justify-content: center;
   align-items: center;
 }
+
 </style>

@@ -41,7 +41,7 @@ export default {
       align-items: center;
       justify-content: center;
       height: 85vh;
-      background-color: #242424;
+      /* background-color: #242424; */
   }
 
   .text {
