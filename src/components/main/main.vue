@@ -144,7 +144,6 @@ img {
 } */
 
 h1 {
-  z-index: 5;
   margin: 0;
   padding: 0;
   color: #9d9d9d;

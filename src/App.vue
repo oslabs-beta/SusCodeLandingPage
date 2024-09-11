@@ -22,6 +22,10 @@ import Footer from './components/Footer/Footer.vue';
 
 <style scoped>
 .meat {
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
     padding: 0em;
     margin-top: 0;
     margin-bottom: 0;
