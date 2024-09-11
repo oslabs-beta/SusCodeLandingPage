@@ -3,5 +3,9 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "lib": ["dom"], // Ensure 'dom' is included
+    "skipLibCheck": true, // Skip type checking for all declaration files
+  },
 }
