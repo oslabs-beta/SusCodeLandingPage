@@ -6,10 +6,10 @@ export default {
 
 <template>
     <section id="about">
-        <h1>ABOUT</h1>
-    </section>
-
-    <section id="about">
+        <div>
+            <h1>ABOUT</h1>
+        </div>
+    
         <div className="text">
             <div class="description-container">
             <div class="descriptionBox">
@@ -35,10 +35,12 @@ export default {
 <style lang="css">
 #about {
       color: #e8e8e8;
+      background: linear-gradient(to bottom, #000000 0%, #242424 100%);
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: space-around;
-      height: 100%;
+      justify-content: center;
+      height: 85vh;
       background-color: #242424;
   }
 
@@ -51,7 +53,8 @@ export default {
 
  .description-container {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
   }
 

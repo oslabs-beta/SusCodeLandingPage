@@ -23,12 +23,10 @@ import Footer from './components/Footer/Footer.vue';
 <style scoped>
 .meat {
     padding: 0em;
-    background: linear-gradient(to bottom, #131313 0%, #242424 100%);
     margin-top: 0;
     margin-bottom: 0;
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
-    box-sizing: border-box;
 }
 
   .temp {
