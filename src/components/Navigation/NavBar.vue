@@ -6,11 +6,11 @@ import ColorMode from './colormode.vue'
 
 <template>
   <nav>
-    <a href="#main" class="logo">
+    <a href="/home" class="logo">
       <img src="../../assets/suscodeicon.png" class="logo" alt="SusCode logo" />
     </a>
-    <a href="#features"> Features </a>
     <a href="#about"> About </a>
+    <a href="#features"> Features </a>
     <a href="#team"> Team </a>
     <a href="#contactus"> Contact Us </a>
     <ColorMode></ColorMode>

@@ -154,10 +154,24 @@ h1 {
   display: inline;
   font-size: 5rem;
   font-weight: bold;
-  background: linear-gradient(142deg, rgba(122,164,212,1) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
+  background: linear-gradient(142deg, rgba(122,164,212,1) 0%, #747bff 25%, #f2c300 50%, rgba(4,48,111,1) 75%, #003366 100%);
+  background-size: 350% 350%;
+  animation: gradient 20s ease infinite;
   background-clip: text;
   color: transparent;
   margin-top: -2rem;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .buttons {

@@ -55,13 +55,16 @@ export default defineComponent({
     align-items: center;
     color: rgba(255, 255, 255, 0.65);
     font-size: 1.5rem;
-    margin: 2rem ;
+    margin: 2rem;
+  }
+  span {
+    padding: 1em;
   }
   img {
-    height: 20rem;
-    width: 20rem;
-    padding: 1.5em;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
+    transition: all ease 0.5s;
   }
 
   html.cafe img {
@@ -72,8 +75,24 @@ html.contrast img {
   filter: contrast(.5);
 }
 
-/* .socials:first-child {
-  WHY MARGIN NO WORK not important
-  margin:0 2em 0 0;
+/* .linkedin:hover {
+  filter: drop-shadow(0 0 1em #646cffaa);
+  background-color: transparent;
 } */
+
+svg {
+  transition: all ease 0.5s;
+}
+
+svg:hover, img:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 15px 25px #535bf2;
+  }
+
+.socials {
+  /* WHY MARGIN NO WORK not important */
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80px;
+}
 </style>
