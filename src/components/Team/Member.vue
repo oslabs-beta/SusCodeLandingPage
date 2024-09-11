@@ -50,6 +50,7 @@ export default defineComponent({
 
 <style lang="css" scoped>
   section {
+    padding-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -44,7 +44,7 @@ export default {
 <style lang="css" scoped>
 #features {
       width: 100vw; /* w-full */
-      height: 100vh;
+      padding-top: 150px;
       display: flex;
       flex-direction: column;
       align-items: center;
