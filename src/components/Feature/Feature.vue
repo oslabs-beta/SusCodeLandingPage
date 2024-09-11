@@ -10,9 +10,20 @@ export default {
             <h1>
                 FEATURES
             </h1>
-            <h3>What Does SusCode Scan For?</h3>
+            <h3>What Does SusCode Scan For?</h3> <br> so far.... <br>
+            <section class ="types">
+              <div class="scan">
+                <span>Common security risk functions via static analysis</span> 
+              </div>
+              <div class="scan">
+                <span>Use of telemetry</span>
+              </div>
+              <div class="scan">
+                <span>Dependencies installed in packages</span>
+              </div>
+            </section>
             <p id="p">
-            The below patterns are dangerous because they either execute code or modify content dynamically, making it easy for malicious actors to inject harmful input if proper security controls are not in place.
+            The below patterns are potentially dangerous because they either execute code or modify content dynamically, making it easy for malicious actors to inject harmful input if proper security controls are not in place.
             </p>
         </div>
 
@@ -33,7 +44,7 @@ export default {
 <style lang="css" scoped>
 #features {
       width: 100vw; /* w-full */
-      height: 85vh;
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -42,7 +53,6 @@ export default {
       background: linear-gradient(to bottom, #242424 0%, #000000 100%);
       box-sizing: border-box;
       margin: 0;
-      padding: 0, 2em;
   }
 
   .features-container {
@@ -55,6 +65,43 @@ export default {
     margin: 20px;
     margin-bottom: 5em;
   }
+
+  .types {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10em;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3em;
+    padding: 5em;
+  }
+
+  .scan {
+    height: 200px;
+    width: 250px;
+    background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    box-shadow: 0px 5px 20px rgb(0, 44, 94), 0px 5px 20px #fff;
+    transition: all ease 0.5s;
+    color: #fff;
+  }
+
+  .scan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 15px 30px #fff;
+  }
+
+  .scan span {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+
 
 .tabs {
     display: flex;

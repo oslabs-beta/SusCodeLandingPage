@@ -35,6 +35,7 @@ export default defineComponent({
     border: .5em solid black;
     border-radius: 2em;
     padding: 2em;
+    padding-top: 5em;
     display: flex;
     flex-wrap:wrap;
     /* justify-content: center; */
