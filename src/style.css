@@ -2,7 +2,6 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #242424;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
 
@@ -14,7 +13,9 @@
 
 body {
   margin: 0;
-  background-color: #242424;
+  /* background-color: #242424; */
+  /* background: rgb(36,36,36); */
+  background: linear-gradient(180deg, rgba(36,36,36,1) 5%, rgba(0,0,0,1) 35%, rgba(0,0,0,1) 100%);
 }
 
 a {

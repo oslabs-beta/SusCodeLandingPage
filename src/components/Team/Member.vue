@@ -44,6 +44,7 @@ export default defineComponent({
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: rgba(255, 255, 255, 0.65);
   }
   img {
     height: 12em;

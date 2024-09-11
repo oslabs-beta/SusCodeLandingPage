@@ -47,28 +47,23 @@ export default {
   <!-- Main Section -->
   <section id="main">
     <div class="text">
-      <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
+      <div class="content">
         <h1>A VS Code Extension</h1>
         <span class="gradient">Suscode</span>
-      <p class="body">
-        A VS Code Extension designed to scan your downloaded extensions for potentially harmful code practices.
-      </p>
-
-      <div class="button">
-        <button href="#" class="download">Download Now</button>
-        <button class="features">How SusCode Works</button>
+        <p class="body">
+          A VS Code Extension designed to scan your downloaded extensions for potentially harmful code practices.
+        </p>
+        <div class="button">
+          <button href="#" class="download">Download Now</button>
+          <button class="features">How SusCode Works</button>
+        </div>
       </div>
     </div>
+    <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
   </section>
 </template>
 
 <style scoped>
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
 /* Spotlight effect styles */
 .dim-overlay {
@@ -78,7 +73,7 @@ html, body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 10; /* On top of everything */
+  z-index: 1001; /* On top of everything */
 }
 
 .spotlight {
@@ -89,38 +84,43 @@ html, body {
   border-radius: 50%;
   pointer-events: none;
   transition: top 0.5s ease, left 0.5s ease;
-  z-index: 11;
+  z-index: 1002;
 }
 
 /* Main section */
 #main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 85vh;
   width: 100vw;
-  padding: 0;
+  padding: 0 5em;
   margin: 0;
   position: relative;
-  background-color: #242424;
   overflow: hidden; /* Prevent scrolling */
 }
 
 .text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  /* background: linear-gradient(to bottom, #242424 0%, #000000 100%); */
+  width: 100%;
+  height: 100%;
+  padding: 0 3em;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to bottom, #131313 0%, #242424 100%);
   color: #e8e8e8;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+  padding: 1rem;
 }
 
 .logo {
@@ -128,11 +128,10 @@ html, body {
   max-width: 60%;
   max-height: 60%;
   object-fit: contain;
-  margin-bottom: -2rem; /* Adjust overlap with h1 */
 }
 
 h1 {
-  z-index: 1;
+  z-index: 5;
   margin: 0;
   padding: 0;
   color: #9d9d9d;
@@ -182,7 +181,6 @@ h1 {
 .body {
   color: #9d9d9d;
   font-size: 1rem;
-  width: 50vh;
 }
 
 @media (min-width: 768px) {
@@ -200,8 +198,17 @@ h1 {
   }
 
   .logo {
-    max-width: 60vw;
-    max-height: 60vh;
+    max-width: 75vw;
+    max-height: 75vh;
   }
+}
+
+@media (max-width: 768px) {
+  #main {
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+  
 }
 </style>

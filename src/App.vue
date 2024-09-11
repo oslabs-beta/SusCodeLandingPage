@@ -23,14 +23,12 @@ import Footer from './components/Footer/Footer.vue';
 <style scoped>
 .meat {
     padding: 0em;
-    background: linear-gradient(to bottom, #131313 0%, #242424 100%);
     margin-top: 0;
     margin-bottom: 0;
     width: 100vw;
-    box-sizing: border-box;
 }
 
-  .temp {
+  /* .temp {
     margin: 10em 1em;
     border: .5em solid;
     border-radius: 2em;
@@ -38,7 +36,6 @@ import Footer from './components/Footer/Footer.vue';
 
     display: flex;
     flex-wrap:wrap;
-    /* justify-content: center; */
-    justify-content: space-evenly;
-  }
+    justify-content: center;
+    justify-content: space-evenly;} */
 </style>

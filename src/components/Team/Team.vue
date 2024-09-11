@@ -16,7 +16,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="team">
+  <section id="team">
     <!-- <Member msg={{ db.team[0]}}/> -->
     <Member
       v-for="(member) in team"
@@ -29,12 +29,11 @@ export default defineComponent({
 </template>
 
 <style scoped>
-  .team {
-    margin: 10em 1em;
-    border: .5em solid;
+  #team {
+    margin: 10em 10em;
+    border: .5em solid black;
     border-radius: 2em;
     padding: 2em;
-
     display: flex;
     flex-wrap:wrap;
     /* justify-content: center; */
