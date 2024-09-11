@@ -18,19 +18,17 @@ import ColorMode from './colormode.vue'
 </template>
 
 <style scoped>
-
-nav {
-  background-color: #131313;
-}
-
 .logo {
   height: 3.5em;
   will-change: filter;
   transition: filter 300ms;
+  align-items: center;
+  justify-content: center;
 }
 
-
 nav {
+  background-color: #242424;
+  color: rgb(93, 93, 93); 
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -39,6 +37,7 @@ nav {
   align-items: center;
   justify-content: space-evenly;
   min-height: 125px;
+  z-index: 1000;
 }
 nav a {
   float: left;
