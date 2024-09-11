@@ -10,7 +10,7 @@ export default {
     onMounted(() => {
       let spotlightX = 0;
       let spotlightY = 0;
-      const spotlightDuration = 4000;
+      const spotlightDuration = 2000;
 
       const interval = setInterval(() => {
         // Randomly move the spotlight around the screen
@@ -30,9 +30,17 @@ export default {
       }, spotlightDuration);
     });
 
+    const scrollToAbout = () => {
+      const aboutSection = document.querySelector('#about');
+      if (aboutSection) {
+        aboutSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
+
     return {
       showSpotlight,
       spotlightStyle,
+      scrollToAbout,
     };
   },
 };
@@ -55,11 +63,11 @@ export default {
         </p>
         <div class="buttons">
           <button href="#" class="download">Download Now</button>
-          <button class="features">How SusCode Works</button>
+          <button class="features" @click="scrollToAbout">How SusCode Works</button>
         </div>
       </div>
     </div>
-    <img src="../../assets/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
+    <img src="../../assets/images/skyline-rat-signal.png" class="logo" alt="SusCode logo" />
   </section>
 </template>
 

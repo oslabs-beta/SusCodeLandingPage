@@ -5,6 +5,7 @@ import About from './components/About/About.vue';
 import Feature from './components/Feature/Feature.vue';
 import Team from './components/Team/Team.vue';
 import ContactUs from './components/Footer/ContactUs.vue';
+import Demo from './components/Demo/Demo.vue';
 import Footer from './components/Footer/Footer.vue';
 </script>
 
@@ -14,6 +15,7 @@ import Footer from './components/Footer/Footer.vue';
     <Main/>
     <About/>
     <Feature/>
+    <Demo />
     <Team/>
     <ContactUs/>
   </div>

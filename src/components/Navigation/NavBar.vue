@@ -1,19 +1,16 @@
 <script setup lang="ts">
-//import { ref } from 'vue'
-import ColorMode from './colormode.vue'
-
 </script>
 
 <template>
   <nav>
     <a href="/home" class="logo">
-      <img src="../../assets/suscodeicon.png" class="logo" alt="SusCode logo" />
+      <img src="../../assets/images/suscodeicon.png" class="logo" alt="SusCode logo" />
     </a>
     <a href="#about"> About </a>
     <a href="#features"> Features </a>
+    <a href="#demo">Demo</a>
     <a href="#team"> Team </a>
     <a href="#contactus"> Contact Us </a>
-    <ColorMode></ColorMode>
   </nav>
 </template>
 

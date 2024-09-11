@@ -7,24 +7,34 @@ export default {
 <template>
     <section id="features">
         <div class="features-container">
-            <h1>
-                FEATURES
-            </h1>
-            <h3>What Does SusCode Scan For?</h3> <br> so far.... <br>
-            <section class ="types">
-              <div class="scan">
-                <span>Common security risk functions via static analysis</span> 
-              </div>
-              <div class="scan">
-                <span>Use of telemetry</span>
-              </div>
-              <div class="scan">
-                <span>Dependencies installed in packages</span>
-              </div>
-            </section>
-            <p id="p">
-            The below patterns are potentially dangerous because they either execute code or modify content dynamically, making it easy for malicious actors to inject harmful input if proper security controls are not in place.
-            </p>
+            <span class="features-heading">FEATURES</span>
+             <h3>What Does SusCode Scan For?</h3>
+        </div>
+            
+        <section class="types">
+            <div class="row">
+                <span class="works-span">Common security risk functions via static analysis</span>
+                <img src="../../assets/images/arrow.gif" class="gif small-arrow" alt="Arrow Gif" />
+                <span class="works-span">SusCode reads the extension files locally and scans for code patterns that may introduce vulnerabilities.</span>
+            </div>
+            
+            <div class="row">
+                <span class="works-span">Use of telemetry</span>
+                <img src="../../assets/images/arrow.gif" class="gif small-arrow" alt="Arrow Gif" />
+                <span class="works-span">SusCode scans HTTP requests and shows where the request is made in the code.</span>
+            </div>
+            
+            <div class="row">
+                <span class="works-span">Dependencies installed in packages</span>
+                <img src="../../assets/images/arrow.gif" class="gif small-arrow" alt="Arrow Gif" />
+                <span class="works-span">SusCode runs package dependencies through the OSV API to detect vulnerabilities.</span>
+            </div>
+        </section>
+
+        <div class="scans">
+            <h1>SCANS</h1>
+            <hr>
+            <p>The below patterns are potentially dangerous because they either execute code or modify content dynamically, making it easy for malicious actors to inject harmful input if proper security controls are not in place.</p>
         </div>
 
         <div class="tabs">
@@ -34,7 +44,6 @@ export default {
                     <b-tab class="b-tab" title="document.write()"><p class="p">This code pattern can introduce vulnerabilities because it allows the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, document.write inserts content directly into the DOM in JavaScript. If it includes user-controlled input, it can lead to cross-site scripting (XSS) attacks, allowing malicious scripts to be executed in the user’s browser.</p></b-tab>
                     <b-tab class="b-tab" title="dangerouslySetInnerHTML()"><p class="p">This code pattern can introduce vulnerabilities because it allows the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, dangerouslySetInnerHTML is a React property that sets HTML directly in the DOM. If untrusted data is used without proper sanitization, it poses a high risk of XSS by injecting harmful HTML or scripts into the webpage.</p></b-tab>
                     <b-tab class="b-tab" title="eval()"><p class="p">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, eval executes a string as JavaScript code. It can easily allow attackers to execute arbitrary code if untrusted input is passed to it, leading to code injection vulnerabilities.</p></b-tab>
-                    <b-tab class="b-tab" title="exec()"><p class="p" style="padding-left: 10px;">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, exec executes system commands in many programming languages (e.g., PHP, Python). Like shell_exec, it can be used for command injection if untrusted input is processed without validation.</p></b-tab>
                     <b-tab class="b-tab" title="System()"><p class="p">This code pattern can introduce vulnerabilities because it allows the execution of arbitrary code or the insertion of content in a way that is hard to control. This makes the code within this extension vulnerable to attacks. Specifically, System commands (e.g., System() in Java) allow running system-level commands. If unvalidated input is passed, it could result in command injection and compromise system security.</p></b-tab>
             </b-tabs>
         </div>
@@ -55,27 +64,68 @@ export default {
       margin: 0;
   }
 
+  .features-heading {
+  display: inline;
+  font-size: 5rem;
+  font-weight: bold;
+  background: linear-gradient(142deg, rgba(122,164,212,1) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
+  background-clip: text;
+  color: transparent;
+  margin-top: -2rem;
+}
+
   .features-container {
     width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    margin: 20px;
-    margin-bottom: 5em;
   }
 
   .types {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10em;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3em;
-    padding: 5em;
-  }
+  display: grid;
+  grid-template-rows: auto auto auto; /* Three rows: boxes, arrows, boxes */
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 3em; /* Gap between items */
+  justify-items: center; /* Center items horizontally within each grid cell */
+  align-items: center; /* Center items vertically */
+  margin: 0 auto; /* Center the grid itself */
+  padding: 2em; /* Adjust padding if needed */
+  max-width: 1200px; /* Optional: limit the width so content doesn't stretch too far */
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding is included within the width */
+}
 
+.works-span {
+  background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
+  border-radius: 10px;
+  width: 90%; /* Control box width */
+  padding: 2.5em; /* Increase padding for larger size */
+  text-align: center;
+  font-size: 1.5rem; /* Increase font size */
+  color: #fff;
+  box-shadow: 0px 10px 30px rgb(0, 44, 94), 0px 10px 30px #fff;
+}
+
+.gif.small-arrow {
+  width: 75px; /* Arrow size */
+  height: 75px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items within the row */
+  justify-content: center; /* Center row content */
+  width: 100%; /* Ensure rows take up the full width */
+}
+
+.scans {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+}
   .scan {
     height: 200px;
     width: 250px;
