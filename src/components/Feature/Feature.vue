@@ -53,7 +53,8 @@ export default {
 <style lang="css" scoped>
 #features {
       width: 100vw; /* w-full */
-      padding-top: 150px;
+      padding-top: 15em;
+      padding-bottom: 20em;
       display: flex;
       flex-direction: column;
       align-items: center;

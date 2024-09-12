@@ -50,6 +50,7 @@ body, html {
   padding: 0;
   margin: 0;
   scroll-margin-top: 125px;
+  background: linear-gradient(to bottom, #242424 0%, #000000 100%);
 }
 
 .team {

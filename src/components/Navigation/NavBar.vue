@@ -3,14 +3,17 @@
 
 <template>
   <nav>
-    <a href="/home" class="logo">
+    <a href="/" class="logo">
       <img src="../../assets/images/suscodeicon.png" class="logo" alt="SusCode logo" />
     </a>
-    <a href="#about"> About </a>
     <a href="#features"> Features </a>
     <a href="#demo">Demo</a>
     <a href="#team"> Team </a>
+    <a href="#blog"> Blogs </a>
     <a href="#contactus"> Contact Us </a>
+    <a href="https://github.com/oslabs-beta/SusCode" target="_blank" class="logo">
+      <img class="logo" src="../../assets/images/github-mark-white.svg" alt="github">
+    </a>
   </nav>
 </template>
 

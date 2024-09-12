@@ -18,7 +18,7 @@ export default {
             </div>
         </div>
 
-        <div>
+        <div class="workdes">
             <h1>HOW IT WORKS</h1>
             <hr>
             <p>When you download an extension for VScode, that extension’s source code is stored on your local device. SusCode then does the follow to easily bring potential vulnterabilities to your attention:</p>
@@ -80,12 +80,16 @@ export default {
     padding: 20px;
   }
 
-  .p {
-    color: #9d9d9d
+  .workdes {
+    width: 75%;
+  }
+
+  p {
+    color: #9d9d9d;
+    font-size: 1.5em;
   }
 
   .about-span {
-    height: 200px;
     width: 60vw;
     background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
     border-radius: 10px;
@@ -97,6 +101,8 @@ export default {
     box-shadow: 0px 5px 20px rgb(0, 44, 94), 0px 5px 20px #fff;
     transition: all ease 0.5s;
     color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .about-span:hover {
@@ -104,11 +110,6 @@ export default {
   box-shadow: 0px 15px 30px #fff;
   }
 
-  .about-span span {
-    font-size: 1rem;
-    font-weight: 600;
-    text-align: center;
-  }
 
   .works {
   display: flex;
@@ -142,6 +143,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-size: 1.5em;
 }
 
 .works-span:hover {

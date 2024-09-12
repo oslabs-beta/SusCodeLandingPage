@@ -1,38 +1,49 @@
 <script lang="ts">
 export default {
-    name: 'ContactUs',
+    name: 'blogs',
 }
 </script>
 
 <template>
-  <section id="contactus">
+    <section id="blog">
         <div>
-            <span class="contactus-heading">CONTACT US</span>
+            <span class="blog-heading">BLOGS</span>
         </div>
 
-        <div class="contact">
-        <div>
-          <a class="contact-span" href= "mailto: suscodeapp@gmail.com">Email Us</a>
-          <a class="contact-span" href="https://x.com/suscode_"><span>Follow us on X!</span></a>
-          <a class="contact-span" href="https://www.linkedin.com/company/suscode/"><span>Stay up to date with us on LinkedIn</span></a>
+      <div class="blogdes">
+        <p>Check out our various publications and blog posts!</p>
+        <hr>
+      </div>
+
+        <div class="blogs">
+            <div>
+                <a class="blogs-span" href="https://medium.com/@allisonrm95/suscode-a-timely-solution-to-rising-vs-code-extension-security-concerns-44cbe06378fd"><span>Check out our Medium Article!</span></a>
+                <a class="blogs-span" href=""><span>See a Reddit thread about us!</span></a>
+            </div>
         </div>
+
+        <div class="blogs">
+            <div>
+                <a class="blogs-span" href=""><span>Published on Hacker News!</span></a>
+                <a class="blogs-span" href="https://www.producthunt.com/posts/suscode?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-suscode"><span>Published on Product Hunt!</span></a>
+            </div>
         </div>
+
     </section>
 </template>
 
-<style lang="css">
-#contactus {
-    background: linear-gradient(to bottom, #242424 25%, #000000 100%);
+<style lang="css" scoped>
+#blog {
+    background: linear-gradient(to bottom, #000000 25%, #242424 100%);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100vw;
-      height: 75vh;
-      scroll-margin-top: 125px;
+      height: 100vh;
   }
 
-  .contactus-heading {
+  .blog-heading {
   display: inline;
   font-size: 5rem;
   font-weight: bold;
@@ -42,13 +53,14 @@ export default {
   margin-top: -2rem;
 }
 
-  .contactus-span {
+  .blog-span {
     height: 80vh;
     width: 60vw;
     background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    font-size: large;
     align-items: center;
     flex-direction: column;
     padding: 2em;
@@ -57,18 +69,18 @@ export default {
     color: #fff;
   }
 
-  .contactus-span:hover {
+  .blog-span:hover {
   transform: translateY(-10px);
   box-shadow: 0px 15px 30px #fff;
   }
 
-  .contactus-span span {
+  .blog-span span {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
   }
 
-  .contact {
+  .blogs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -78,7 +90,7 @@ export default {
   box-sizing: border-box;
 }
 
-.contact div {
+.blogs div {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -86,7 +98,7 @@ export default {
   gap: 1.5rem;
 }
 
-.contact-span {
+.blogs-span {
   background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
   border-radius: 10px;
   width: 25%;
@@ -102,20 +114,30 @@ export default {
   text-align: center;
 }
 
-.contact-span:hover {
+.blogs-span:hover {
   transform: translateY(-10px);
   box-shadow: 0px 15px 30px #fff;
 }
 
-.contact-span span {
-  font-size: 1rem;
+.blogs-span span {
+  font-size: 1.25rem;
   font-weight: 600;
 }
 
 .text {
-    color: rgb(189, 189, 189);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: rgb(189, 189, 189);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+hr {
+  color: white;
+}
+
+.blogdes {
+  width:60%;
+}
+
+
 </style>
