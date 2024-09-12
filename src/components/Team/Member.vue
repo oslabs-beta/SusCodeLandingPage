@@ -95,5 +95,6 @@ svg:hover, img:hover {
   display: grid;
   grid-template-columns: auto auto;
   width: 80px;
+  padding:1em;
 }
 </style>

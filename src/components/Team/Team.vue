@@ -55,7 +55,7 @@ body, html {
 .team {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;

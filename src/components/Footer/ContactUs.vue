@@ -7,9 +7,11 @@ export default {
 <template>
     <section id="contactus">
       <div class="contact-container">
-        <span class="contact-span">
-          Contact Us: <a href= "mailto: suscodeapp@gmail.com"> suscodeapp@gmail.com </a>
-        </span>
+        <p class="contact-span">
+          Contact Us! 
+          <a href= "mailto: suscodeapp@gmail.com"> Email </a>
+          <a href= "https://github.com/oslabs-beta/SusCode/"> Git Hub </a>
+        </p>
       </div>
     </section>
 </template>
@@ -27,11 +29,12 @@ export default {
     justify-content: center;
     gap: 20px;
     margin-bottom: 4rem;
+    padding: 5em 0;
   }
 
   .contact-span {
-    height: 200px;
-    width: 60vw;
+    /* height: 200px; */
+    width: 40vw;
     background: linear-gradient(142deg, rgb(0, 44, 94) 0%, rgba(4,48,111,1) 35%, rgba(4,94,222,1) 100%);
     border-radius: 10px;
     display: flex;
@@ -49,7 +52,7 @@ export default {
   box-shadow: 0px 15px 30px #fff;
   }
 
-  .contact-span span {
+  .contact-span p {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
