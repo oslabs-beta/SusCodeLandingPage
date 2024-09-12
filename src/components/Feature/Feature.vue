@@ -103,7 +103,7 @@ export default {
   width: 90%; /* Control box width */
   padding: 2.5em; /* Increase padding for larger size */
   text-align: center;
-  font-size: 1.5rem; /* Increase font size */
+  font-size: 1.25rem; /* Increase font size */
   color: #fff;
   box-shadow: 0px 10px 30px rgb(0, 44, 94), 0px 10px 30px #fff;
 }
@@ -189,8 +189,8 @@ export default {
   text-align: center;
   display: flex;
   justify-content: center;
-  /* font-size: 1.25em; */
   padding: 1.5em;
+  font-size: 0.85em;
 }
 
 /* Style for the active tab header */

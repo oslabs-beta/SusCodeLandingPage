@@ -143,7 +143,7 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 .works-span:hover {
