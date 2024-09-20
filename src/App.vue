@@ -7,6 +7,7 @@ import Team from './components/Team/Team.vue';
 import ContactUs from './components/Footer/ContactUs.vue';
 import Demo from './components/Demo/Demo.vue';
 import Footer from './components/Footer/Footer.vue';
+import Blog from './components/Blog/blogs.vue';
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Footer from './components/Footer/Footer.vue';
     <Feature/>
     <Demo />
     <Team/>
+    <Blog/>
     <ContactUs/>
   </div>
   <Footer/>

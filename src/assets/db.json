@@ -2,7 +2,7 @@
   "team" : [
     {
       "id": "t01m01", 
-      "name": "Ali McNarma", 
+      "name": "Ali McNamara", 
       "github": "https://github.com/allisonrm95", 
       "linkedin": "https://www.linkedin.com/in/ali-mcnamara/",
       "imagePath": "images/AliM.jpg"
@@ -16,7 +16,7 @@
     },
     {
       "id": "t01m03", 
-      "name": "Kenny Olson", 
+      "name": "Kenneth Olson", 
       "github": "https://github.com/AchillesHeir", 
       "linkedin": "https://www.linkedin.com/in/kenneth-j-olson/",
       "imagePath": "images/ko.jpg"
@@ -30,9 +30,9 @@
     },
     { 
       "id": "t01m05", 
-      "name": "William Delessandro", 
+      "name": "Billy-Jack Dalessandro", 
       "github": "https://github.com/bjdooi", 
-      "linkedin": "https://www.linkedin.com/in/william-jack-dalessandro-816467104/",
+      "linkedin": "https://www.linkedin.com/in/williamdalessandro/",
       "imagePath": "images/bjwd.jpg"
     }
   ]

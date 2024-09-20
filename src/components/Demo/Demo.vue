@@ -7,12 +7,10 @@ export default {
 <template>
     <section id="demo">
       <div>
-        <div>
-            <span class="demo-heading">DEMO</span>
-        </div>
-        <div>
-            <img class="img" src="../../assets/images/SusCode_Demo_1.gif" alt="SusCode Demo" />
-        </div>
+          <span class="demo-heading">DEMO</span>
+      </div>
+      <div>
+          <img class="img" src="../../assets/images/SusCode_Demo_loop.gif" alt="SusCode Demo" />
       </div>
     </section>
 </template>
@@ -26,9 +24,8 @@ export default {
       align-items: center;
       justify-content: center;
       width: 100vw;
-      height: 100vh;
       scroll-margin-top: 125px;
-      /* background-color: #242424; */
+      padding-bottom: 15em;
   }
 
   .demo-heading {

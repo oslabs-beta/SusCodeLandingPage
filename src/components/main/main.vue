@@ -62,7 +62,9 @@ export default {
           A VS Code Extension designed to scan your downloaded extensions for potentially harmful code practices.
         </p>
         <div class="buttons">
-          <button href="#" class="download">Download Now</button>
+          <a href="https://marketplace.visualstudio.com/items?itemName=SusCode.suscode" target="_blank"> 
+            <button class="download">Download Now</button>
+          </a>
           <button class="features" @click="scrollToAbout">How SusCode Works</button>
         </div>
       </div>
@@ -101,8 +103,9 @@ export default {
   align-items: center;
   justify-content: center;
   height: 85vh;
+  width: 100vw;
   overflow: hidden; /* Prevent scrolling */
-  margin-left:3em;
+  background: linear-gradient(to bottom, #242424 10%, #000000 100%, #000000 100%);
 }
 
 .text {
@@ -112,7 +115,7 @@ export default {
   justify-items: center;
   width: 100%;
   height: 100%;
-  padding: 0 1em 2em 3em;
+  padding: 3em 1em 2em 7em;
   margin: 0;
   box-sizing: border-box;
 }

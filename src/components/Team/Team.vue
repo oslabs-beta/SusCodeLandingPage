@@ -48,14 +48,16 @@ body, html {
   justify-content: center;
   width: 100vw;
   padding: 0;
+  padding-bottom: 10em;
   margin: 0;
   scroll-margin-top: 125px;
+  background: linear-gradient(to bottom, #242424 0%, #000000 100%);
 }
 
 .team {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   width: 100vw;
